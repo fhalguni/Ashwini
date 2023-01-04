@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century-Gothic;
+}
+.navbar-brand{
+    padding: 13px 15px;
+    font-size: 2rem;    
+}
+.logo img{
+    position: absolute;
+    border-radius: 50%;
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    top: 1%;
+
+}
+#navbarNav{
+    padding: 13px 13px;
+    width: 70px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    position: absolute;
+    left: 72%;
+    display: flex;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(158, 114, 26);
+    opacity: 0.8;
+    color:white;
+    font-size: 50px;
+}
+.button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("https://www.posist.com/restaurant-times/wp-content/uploads/2016/12/restaurant-delivery-orders-1024x683.jpg");
+    height: 120vh;  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#navbarNav ul li a{
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    background-color: black;
+    opacity: 0.8;
+    text-decoration: none;
+}
+#navbarNav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.demo{
+    font-size: 20px;
+    position: absolute;
+    left: 43%;
+    top: 7%;
+}
+.logo1 img{
+    border-radius: 50%;
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    left: 13%;
+}
+.refer{
+    font-size: 15px;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+
+}
+.refer1{
+    font-size: 15px;
+    position: absolute;
+    top: 90%;
+    right: 35%;
+
+}
+.refer2{
+        font-size: 15px;
+        position: absolute;
+        top: 90%;
+        right: 15%;
+}
+.logo2 img{
+    border-radius: 50%;
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    right: 45%;
+}
+.logo3 img{
+    border-radius: 50%;
+    /* float: left; */
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 75%;
+    right: 18%;
+}
+h4{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px white;
+}
+p{
+    color: white;
+    font-size: 1.2rem;
+}
+.same{
+    text-align: center;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* JavaScrip Css */
+
+.pop_up {
+    width: 400px;
+    background: white;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 50%) scale(0.1);
+    text-align: center;
+    padding: 0px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open_pop_up {
+    visibility: visible;
+    top: 25%;
+    transform: translate(-50%, 50%) scale(1);
+}
+.logo1_pop_up {
+    /* visibility: visible; */
+    top: 25%;
+    transform: translate(-50%, 50%) scale(1);
+}
+
+.pop_up img {
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pop_up>h2 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 30px 0px 10px;
+}
+
+.pop_up>p {
+    margin: 0px;
+}
+
+.pop_up button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0px;
+    background-color: #6fd649;
+    color: white;
+    border: 0px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+#close >p{
+    margin: 0px;
+}
+.focus{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: scale(3.5);
+    z-index: 3;
+    transition: 0.5s;
+}
+.focus1{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    transform: scale(3.5);
+    z-index: 3;
+    transition: 0.5s;
+}
+.focus2{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    transform: scale(3.5);
+    z-index: 3;
+    transition: 0.5s;
+}
