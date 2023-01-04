@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="home2 (2).css">
+
+</head>
+
+<style>
+    .main {
+        font-size: 30px;
+        font-style: italic;
+        color: gold;
+    }
+</style>
+
+<body>
+
+    <header class="contact">
+
+
+        <div class="title ">
+            <h1 style="color: white;">Welcome to my online meal</h1>
+            <h2 style="color: white;"><i>Restaurants in your pocket</i></h2>
+        </div>
+        <div class="demo same">
+            <p>Order food from favourite restaurants near you.</p>
+        </div>
+        <div class="refer same">
+            <h4>Lightning-Fast Delivery</h4>
+            <p> Experience superfast delivery <br>for food delivered<br> fresh & on time</p>
+        </div>
+        <div class="refer1 same">
+            <h4>Live Order Tracking</h4>
+            <p> Know where your order is<br> at all times, from the restaurant to your doorstep</p>
+        </div>
+        <div class="refer2 same">
+            <h4>No Minimum Order</h4>
+            <p> Order in for yourself<br>or for the group,<br> with no restrictions<br> on order value</p>
+        </div>
+
+        <div class="button btn btn-success">
+            <a href="#" class="btn">Contact us</a>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="container-fluid" style="width: 500px;">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Enter your delevery location..."
+                            aria-label="serach">
+                        <input type="button" value="Delivery" onclick="openPopup()" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login2.html ">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register2.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_us2.html">About </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="main container-fluid">
+
+        <div class="logo ">
+            <img src="https://i.pinimg.com/originals/4e/95/ff/4e95ff2406e7914e70cbbba6dd9c51d2.jpg">
+
+        </div>
+        <div class="logo1 change">
+            <img src="https://i.gadgets360cdn.com/large/hypertrack_smartphone_google_maps_1498114150966.jpg"
+                alt="">
+        </div>
+        <div class="logo2 change">
+            <img src="https://img.freepik.com/premium-vector/fast-delivery-icon-express-delivery-urgent-delivery-services-stopwatch-sign_349999-859.jpg?w=2000"
+                alt="">
+        </div>
+        <div class="logo3 change">
+            <img src="https://blogs.biomedcentral.com/on-medicine/wp-content/uploads/sites/6/2019/09/iStock-1131794876.t5d482e40.m800.xtDADj9SvTVFjzuNeGuNUUGY4tm5d6UGU5tkKM0s3iPk-620x342.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="pop_up">
+        <img src="https://img.freepik.com/premium-vector/fast-delivery-icon-express-delivery-urgent-delivery-services-stopwatch-sign_349999-859.jpg?w=2000"
+            alt="">
+        <!-- <h2>Thank You</h2> -->
+        <p class="text-success">Order Will be delivered shotly</p>
+        <button type="button" id="close" onclick="closePopup()">
+            <p>OK</p>
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script>
+        let popUp_div = document.querySelector('.pop_up');
+        let close_div = document.getElementById("close");
+        let main_div = document.querySelector('.container-fluid');
+        let tag_div = document.querySelector('.tag');
+        let contact_div = document.querySelector('.contact');
+        let logo1_div = document.querySelector('.logo1');
+        let logo2_div = document.querySelector('.logo2');
+        let logo3_div = document.querySelector('.logo3');
+        let logo_div = document.querySelector('.logo');
+        function openPopup() {
+            popUp_div.classList.add("open_pop_up");
+            contact_div.style.visibility = "hidden";
+
+        }
+        function closePopup() {
+            popUp_div.classList.remove("open_pop_up");
+            contact_div.style.visibility = "visible";
+
+
+            // window.open("index.html")
+        }
+        logo1_div.onclick = () => {
+            logo1_div.classList.add("focus");
+            logo2_div.classList.remove("focus1");
+            logo3_div.classList.remove("focus2");
+            contact_div.style.visibility = "hidden";
+        }
+        logo2_div.onclick = () => {
+            logo1_div.classList.remove("focus");
+            logo2_div.classList.add("focus1");
+            logo3_div.classList.remove("focus2");
+
+            contact_div.style.visibility = "hidden";
+        }
+        logo3_div.onclick = () => {
+            logo2_div.classList.remove("focus1");
+            logo3_div.classList.add("focus2");
+            logo1_div.classList.remove("focus");
+            contact_div.style.visibility = "hidden";
+        }
+        logo_div.onclick = () => {
+            contact_div.style.visibility = "visible";
+            logo2_div.classList.remove("focus1");
+            logo3_div.classList.remove("focus2");
+            logo1_div.classList.remove("focus");
+        }
+    </script>
+</body>
+
+</html>
